@@ -1,4 +1,5 @@
 import {React, useState} from 'react'
+import {Message} from '../messager/Message';
 import './main.css'
 
 export const INITIAL_MESSAGES = [
@@ -14,9 +15,7 @@ export function Main () {
   return (
     <div className='main'>
       {messages.map(({text, isCurrentUser},i) =>(
-        <div key={i}>
-          {text}
-        </div>
+        <Message key={i} text={text} isCurrentUser={isCurrentUser}/>
       ))}
     </div>
   )
