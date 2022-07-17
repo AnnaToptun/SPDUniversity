@@ -14,9 +14,17 @@ export function Main () {
 
   return (
     <div className='main'>
-      {messages.map(({text, isCurrentUser},i) =>(
-        <Message key={i} text={text} isCurrentUser={isCurrentUser}/>
-      ))}
+      <div className='main__messeges'>
+        {messages.map(({text, isCurrentUser},i) =>(
+          <Message key={i} text={text} isCurrentUser={isCurrentUser}/>
+        ))}
+      </div>
+      <div className='main_plate'>
+        <textarea ></textarea>
+      </div>
+      <div className='main_plate'> 
+          <button>Send message</button>
+      </div>
     </div>
   )
 }
