@@ -1,10 +1,9 @@
 import React from 'react'
-
+import './header.css'
 export function Header (){
   return (
-    <div>
-      zxvcnbjn,kl;sc
-      
-    </div>
+    <header className='header'>
+      <h1  className='header__title'>SPDU</h1>
+    </header>
   )
 }
