@@ -16,20 +16,33 @@ export function Main () {
     setCurrentMessage(value)
   }
 
+  const onButtonClick = () =>{
+    if(currentMessage.trim()) {
+      setMessages([...messages, {text: currentMessage, isCurrentUser: true}])
+      setCurrentMessage('')
+    }
+  }
   return (
     <div className='main'>
       <div className='main__messeges'>
         {messages.map(({text, isCurrentUser},i) =>(
-          <Message key={i} text={text} isCurrentUser={isCurrentUser}/>
+          <Message 
+            key={i} 
+            text={text} 
+            isCurrentUser={isCurrentUser}/>
         ))}
       </div>
       <div className='main__plate'>
         <textarea className='main__textarea' 
           onChange={onTextAreaChange} 
-          value={currentMessage}></textarea>
+          value={currentMessage}>
+        </textarea>
       </div>
       <div className='main__plate'> 
-        <button className='main__button'>Send message</button>
+        <button 
+          className='main__button'
+          onClick={onButtonClick}
+        >Send message</button>
       </div>
     </div>
   )
