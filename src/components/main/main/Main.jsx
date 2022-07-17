@@ -29,7 +29,7 @@ export function Main () {
           value={currentMessage}></textarea>
       </div>
       <div className='main__plate'> 
-        <button>Send message</button>
+        <button className='main__button'>Send message</button>
       </div>
     </div>
   )
