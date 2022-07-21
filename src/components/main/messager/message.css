@@ -1,15 +1,16 @@
 .message {
   display: flex;
-  padding: 11px;
+  padding: 16px;
+  
 }
 .message_second {
   background-color: var(--gray-dark);
 }
 .message__avatar{
-  width: 79px;
-  height: 79px;
+  width: 113px;
+  height: 113px;
   flex-shrink: 0; /* для того щоб картинка займала весь свый простір*/
-  border: 3px solid #fff;
+  border: 4px solid #fff;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -19,12 +20,12 @@
 }
 
 .message__bubble{
-  margin: 0 10px 0 11px;
-  padding: 7px 6px 8px 8px;
+  margin: 0 14px 0 16px;
+  padding: 10px 9px 11px 11px;
   border-radius: 8px;
   background-color: #fff;
   width: 100%;
-  font-size: 14px;
+  font-size: 18px;
   word-spacing: -1px;
 }
 

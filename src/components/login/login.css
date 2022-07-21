@@ -1,0 +1,27 @@
+.login__plate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 21px;
+  border-top: 1px solid var(--gray-dark);
+  row-gap: 20px;
+}
+
+.login__input {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: inset 0 1px 8px  rgba(0, 0, 0, 0.2);
+}
+.login__button {
+  width: 100%;
+  background-color: var(--blue);
+  border: none;
+  padding: 12px;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 42px;
+}

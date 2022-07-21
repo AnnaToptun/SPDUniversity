@@ -1,5 +1,12 @@
-.app {
-    width: 336px;
+.app  {
+    width: 478px; 
     background-color: var(--gray-light);
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+   
+}
+.app__plate  {
+    width: 478px; 
+    background-color: var(--gray-light);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+   
 }

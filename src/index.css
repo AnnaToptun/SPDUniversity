@@ -13,6 +13,6 @@ body {
     box-sizing: border-box;
 }    
 
-button {
+button, textarea {
     font-family: 'Raleway', sans-serif;
 }
